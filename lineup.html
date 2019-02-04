@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>KVRX Fest</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/the-big-picture.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #ED5464;">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lineup.html">LINEUP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">SCHEDULE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FAQ.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/FAQ">BUY TICKETS →</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+  <!--  <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="mt-5">The Big Picture</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptates rerum eveniet sapiente repellat esse, doloremque quod recusandae deleniti nostrum assumenda vel beatae sed aut modi nesciunt porro quisquam voluptatem.</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <style>   
+
+ .wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: left;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.left {
+  text-align: left;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+}
+
+.right {
+  height: 95vh;
+  margin-top: 5vh;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .left { order: 1;
+  flex: 0 0 5em; } 
+  .right { order: 3; }
+}
+
+
+body {
+  background-color: #DBB9D6;
+  background-image: url("http://i68.tinypic.com/23kfdag.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 2em; 
+}
+
+@media only screen and (max-width: 800px) {
+    #disappear {
+        display: none;
+    }
+}
+
+p.a {
+  color: black; 
+	font-size: 2em; 
+	text-decoration: none; 
+	font-weight: 150;
+	align: left; 
+	margin-left: .5em;
+	font-family: 'Helvetica Neue LT Pro','Helvetica Neue',Arial,sans-serif
+	line-height: 50px; 
+}
+
+p.b {
+  font-size: 1em;
+  font-color: #000;
+  line-height: 1em;
+  font-weight: 400;
+  margin-bottom: 0em;
+  font-family: 'Helvetica Neue LT Pro','Helvetica Neue',Arial,sans-serif;
+}
+
+p.subhead {
+  color: black; 
+	font-size: 1.4em; 
+	text-decoration: none; 
+	font-weight: 150;
+	align: left; 
+	margin-left: .5em;
+	font-family: 'Helvetica Neue LT Pro','Helvetica Neue',Arial,sans-serif
+	margin-top: 10px; 
+}
+
+
+h1 { 
+    display: block;
+    font-family: "Helvetica Neue LT Pro","Helvetica Neue",Arial,sans-serif
+    font-size: 2em;
+    line-height:.756;
+    color:black;
+    text-align: left;
+    margin-top: 0em;
+    margin-bottom: 0.3em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h2 { 
+    display: block;
+    font-family: "Helvetica Neue LT Pro","Helvetica Neue",Arial,sans-serif
+    font-size: 2em;
+    font-weight:bold;
+    line-height:.85;
+    color:black;
+    text-transform: uppercase;
+    text-align: left;
+    position: sticky;
+ 	position: -webkit-sticky; /* Safari */
+ 	padding: 20px 20px 20px;
+}
+
+h3 { 
+    display: block;
+    font-family: "Helvetica Neue LT Pro","Helvetica Neue",Arial,sans-serif
+    font-size: 1.7em;
+    font-weight:bold;
+    line-height:.756;
+    color:white;
+    background-color:#5EB4E3;
+    text-align: left;
+ 	top: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#kvrxfest {
+  border: 1px solid;
+  background-color: #DBB9D6;
+  padding: 15px 20px 15px 20px;
+  box-shadow: 6px 6px #FAD800;
+}
+
+a:hover { 
+	color: #ED5464; 
+	text-decoration: none; 
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #DBB9D6;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    border: 5px solid #5EB4E3;
+    width: 80%;
+    max-height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body {
+    background-color: #DBB9D6;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    }
+
+.modal-button {
+  background-color: transparent; /* Green */
+  border: none;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: black; 
+  font-weight:bold;
+  text-transform: uppercase;
+  font-size: 2em; 
+  font-family: 'Helvetica Neue LT Pro','Helvetica Neue',Arial,sans-serif;
+  width: 100%;
+}
+
+.modal-button:hover {
+  background-color: #5EB4E3;
+  color: white;
+}
+  </style>
+  
+ <div class="wrapper">
+ 
+ <aside class="aside left">
+  <div id="kvrxfest">
+    <a href="index.html"><h1>KVRX FEST</h1></a>
+    <div id="disappear"><p class="b">May 10-11th<br>
+    Austin, TX  </p></div>
+  </div>
+  </aside>
+  
+  <aside class="aside right">
+  <h3>LINEUP</h3>
+  <i>* Austin artist</i></font><p>
+  
+
+<!-- Trigger/Open The Modal -->
+<button class="modal-button" href="#myModal1">Frankie Cosmos</button>
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <h2>Frankie Cosmos</h2>
+      <center><iframe width="560" height="315" src="https://www.youtube.com/embed/QY2tNvEJIU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+      <p class="subhead">HOMETOWN, ST  </p></center><p><p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare neque ut risus pharetra, ac maximus ipsum rutrum. Curabitur mollis orci nec imperdiet porttitor. Sed at mattis arcu. Pellentesque dolor ex, ultricies eu diam vitae, congue mattis erat. Nullam rutrum erat sapien, dapibus vulputate tellus maximus eget. Pellentesque eu convallis nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer lobortis varius dolor.
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal2">Drab Majesty</button>
+<div id="myModal2" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal3">Fat Tony</button>
+<div id="myModal3" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal4">Palm</button>
+<div id="myModal4" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal5">Abhi the Nomad*</button>
+<div id="myModal5" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal6">Omni</button>
+<div id="myModal6" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal7">Video Age</button>
+<div id="myModal7" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal8">Sexy Dex and the Fresh</button>
+<div id="myModal8" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal9">Mamalarky</button>
+<div id="myModal9" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal10">Why Bonnie*</button>
+<div id="myModal10" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal11">TC Superstar*</button>
+<div id="myModal11" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal12">Blushing*</button>
+<div id="myModal12" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal13">Xetas*</button>
+<div id="myModal13" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal14">Caroline Says*</button>
+<div id="myModal14" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal15">Smiile*</button>
+<div id="myModal15" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal16">Dezorah</button>
+<div id="myModal16" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal17">Mike Melinoe*</button>
+<div id="myModal17" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p><center><img src="http://i65.tinypic.com/21b8z14.jpg" width="100%" height="100%"><p>
+		<p class="subhead">AUSTIN, TX  </p></center><p><p>
+		Rapper Mike Melinoe cut his teeth in the Detroit music scene before relocating to Austin. The Motor City’s loss is definitely our gain. Melinoe performed for KVRX at a Local Live taping last fall, where he demonstrated his charisma and his versatility behind the mic. .....    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal18">Ama*</button>
+<div id="myModal18" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal19">Indoor Creature*</button>
+<div id="myModal19" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal20">Pleasure Venom*</button>
+<div id="myModal20" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal21">Alexalone*</button>
+<div id="myModal21" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal22">Sad Cops</button>
+<div id="myModal22" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal23">Pearl Earl</button>
+<div id="myModal23" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal24">Daphne Tunes*</button>
+<div id="myModal24" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal25">Little Mazarn*</button>
+<div id="myModal25" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal26">Vonne*</button>
+<div id="myModal26" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal27">Hey Cowboy</button>
+<div id="myModal27" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal28">Being Dead*</button>
+<div id="myModal28" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal29">Street Sects*</button>
+<div id="myModal29" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal30">Ex Romantika*</button>
+<div id="myModal30" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal31">Van Mary*</button>
+<div id="myModal31" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal32">Chucky Blk*</button>
+<div id="myModal32" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal33">Big Wy's Brass Band*</button>
+<div id="myModal33" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal34">Jay Wile</button>
+<div id="myModal34" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal35">Light Horse Harry*</button>
+<div id="myModal35" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal36">Hot Mom*</button>
+<div id="myModal36" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal37">Fishing in Japan</button>
+<div id="myModal37" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal38">Lainey Gonzales*</button>
+<div id="myModal38" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+
+<button class="modal-button" href="#myModal39">Cement*</button>
+<div id="myModal39" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>OTHER TEXT.</p>
+    </div>
+  </div>
+</div>
+<p>
+   </aside>
+ 
+  
+ </div>
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+// Get the button that opens the modal
+var btn = document.querySelectorAll("button.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}
+    </script>
+  </body>
+
+</html>
